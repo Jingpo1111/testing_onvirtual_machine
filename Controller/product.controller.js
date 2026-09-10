@@ -12,15 +12,16 @@ const addProduct = async (req, res) => {
 };
 
 const getProduct = async (req, res) => {
-    try {
-        const sql = "select *from user.products";
-        const results = await db.execute(sql);
-        res.status(200).json(results);
+    res.status(200).json({ message: "Get Product Successfully" });
+    // try {
+    //     const sql = "select *from user.products";
+    //     const results = await db.execute(sql);
+    //     res.status(200).json(results);
 
-    } catch (err) {
-        res.status(500).json({ error: err.message });
+    // } catch (err) {
+    //     res.status(500).json({ error: err.message });
 
-    }
+    // }
 };
 
 const deleteProduct = async (req, res) => {

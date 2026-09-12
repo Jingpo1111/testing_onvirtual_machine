@@ -12,6 +12,7 @@ const restockRoutes = require("./Routes/restock.routes");
 const promotion = require("./Routes/promotion.routes");
 const payment = require("./Routes/payment.routes");
 const vieworder = require("./Routes/view.routes");
+const review = require("./Routes/review-note.routes");
 
 app.use(express.json());
 app.use('/api', userRoutes);
@@ -22,6 +23,7 @@ app.use('/api', restockRoutes);
 app.use('/api', promotion);
 app.use('/api', payment);
 app.use('/api', vieworder);
+app.use('/api', review);
 
 
 

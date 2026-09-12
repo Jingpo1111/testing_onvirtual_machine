@@ -8,7 +8,8 @@ const viewOrder = async (req, res) => {
                 o.order_date,
                 o.order_quantity,
                 p.payment_total,
-                p.payment_status
+                p.payment_status,
+                p.payment_id
             from user.orders o
             join user.payments p on p.order_id=o.order_id
         `;
